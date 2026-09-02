@@ -14,7 +14,7 @@ export default {
         set(value) {
           value = value ? "true" : "false";
           this.set("custom_fields.enable_sold_button", value);
-          return value;
+          return value === "true";
         },
       },
 
@@ -26,7 +26,7 @@ export default {
         set(value) {
           value = value ? "true" : "false";
           this.set("custom_fields.enable_purchased_button", value);
-          return value;
+          return value === "true";
         },
       },
 
@@ -38,7 +38,7 @@ export default {
         set(value) {
           value = value ? "true" : "false";
           this.set("custom_fields.enable_exchanged_button", value);
-          return value;
+          return value === "true";
         },
       },
 
@@ -50,7 +50,7 @@ export default {
         set(value) {
           value = value ? "true" : "false";
           this.set("custom_fields.enable_cancelled_button", value);
-          return value;
+          return value === "true";
         },
       },
     });
